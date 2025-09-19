@@ -17,9 +17,9 @@ class CafeAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     override fun getItemCount(): Int {
         return TABS_FIXED.size
     }
-    override fun createFragment(position: Int): Fragment
-    {
+
+    override fun createFragment(position: Int): Fragment {
+        // Anda mungkin ingin mengembalikan fragmen yang berbeda berdasarkan posisi
         return CafeDetailFragment()
     }
 }
-    
